@@ -11,14 +11,14 @@ const Quiz = ({ quiz }) => {
 
     return (
         <div className='flex justify-center'>
-            <div className='my-2  bg-violet-100 w-50'>
-                <div className='flex justify-center '>
-                    <div className='flex'>
+            <div className='my-2  bg-violet-500 w-3/4 p-2 '>
+                <div className=' '>
+                    <div className='flex justify-between'>
                         <div>{question}</div>
                         <div onClick={clickedEye} ><EyeIcon className="h-6 w-6" /></div>
                     </div>
                 </div>
-                <form className='grid grid-cols-2'>
+                <form className='grid grid-cols-2 bg-violet-300 '>
                     {
                         options.map(option => <Option
                             option={option}

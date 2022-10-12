@@ -8,6 +8,7 @@ import Quizes from './Components/Quizes/Quizes';
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import Welcome from './Components/Welcome/Welcome';
+import InvalidMessage from './Components/InvalidMessage/InvalidMessage';
 function App() {
   const router=createBrowserRouter([
 {
@@ -58,8 +59,11 @@ function App() {
   }
  ]
 
+},
+{
+path:'*',
+element:<InvalidMessage></InvalidMessage>
 }
-
   ]);
   return (
     <div className="App">

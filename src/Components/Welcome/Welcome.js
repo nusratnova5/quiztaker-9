@@ -4,7 +4,7 @@ const Welcome = () => {
     return (
         <div>
            <div>
-            <img src='image.png'alt=''></img>
+            <img src='../public/images/image.jpg'alt=''></img>
            </div>
         </div>
     );

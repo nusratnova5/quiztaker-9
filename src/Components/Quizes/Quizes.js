@@ -6,7 +6,7 @@ const Quizes = () => {
     const quizes = useLoaderData().data.questions;
     console.log(quizes);
     return (
-        <div>
+        <div className=''>
             {
                 quizes.map( quiz => <Quiz
                     key={quiz.id}
