@@ -5,8 +5,8 @@ const Header = () => {
     return (
         <nav>
           <div className='bg-purple-100 p-4 mb-5 flex justify-between items-center'>
-            <div className=' text-purple-700 font-bold text-lg '>
-             <p >QuizTaker</p>
+            <div className=' text-purple-700 font-bold text-lg'>
+             <p className=''>QuizTaker</p>
            </div>
            <div>
              <ul className='md:flex'>

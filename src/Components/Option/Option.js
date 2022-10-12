@@ -1,17 +1,22 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const Option = ({option, correctAnswer}) => {
+    
     const clickedOption = () =>{
+        // console.log(correctAnswer);
+        console.log(option);
         if(option === correctAnswer){
-            alert('right');
+            toast("Right!");
         }
         else{
-            alert('wrong');
+            toast("Wrong!");
         }
     }
+
     return (
-        <lebel className='radio-inline'>
-            <input onClick={clickedOption} type='radio' name='optradio'/>
+        <lebel onClick={clickedOption} className='radio-inline'>
+            <input type='radio' name='optradio'/>
             {option}
         </lebel>
     );

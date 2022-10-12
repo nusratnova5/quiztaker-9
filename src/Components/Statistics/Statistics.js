@@ -1,10 +1,9 @@
 import React from 'react';
 import { useLoaderData } from 'react-router-dom';
-import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend } from 'recharts';
 
 const Statistics = () => {
     const data = useLoaderData().data;
-    console.log(data);
     return (
         <div>
             <h2>This is statistics</h2>
