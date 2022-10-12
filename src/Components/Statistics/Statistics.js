@@ -6,7 +6,6 @@ const Statistics = () => {
     const data = useLoaderData().data;
     return (
         <div>
-            <h2>This is statistics</h2>
             <div className='flex justify-center'>
             <div>
                 <LineChart

@@ -8,7 +8,6 @@ const Topics = () => {
     // console.log(topics);
     return (
         <div>
-            <h2>This is Topics</h2>
             <div className='flex'>
             {
                 topics.map(topic => <Topic

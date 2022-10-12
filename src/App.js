@@ -7,12 +7,23 @@ import Statistics from './Components/Statistics/Statistics';
 import Quizes from './Components/Quizes/Quizes';
 import {ToastContainer} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
+import Welcome from './Components/Welcome/Welcome';
 function App() {
   const router=createBrowserRouter([
 {
  path:'/',
  element:<Main></Main>,
  children:[
+  {
+    path:'/',
+    loader: () => {
+      return fetch('https://openapi.programming-hero.com/api/quiz');
+    },
+    element: <div>
+      <Welcome></Welcome>
+      <Topics></Topics>
+    </div>
+  },
   {
     path:'topics',
     loader: () => {

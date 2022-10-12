@@ -11,8 +11,8 @@ const Quiz = ({ quiz }) => {
 
     return (
         <div className='flex justify-center'>
-            <div className='my-2'>
-                <div className='flex justify-center'>
+            <div className='my-2  bg-violet-100 w-50'>
+                <div className='flex justify-center '>
                     <div className='flex'>
                         <div>{question}</div>
                         <div onClick={clickedEye} ><EyeIcon className="h-6 w-6" /></div>
