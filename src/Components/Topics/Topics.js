@@ -8,7 +8,7 @@ const Topics = () => {
     // console.log(topics);
     return (
         <div>
-            <div className='flex justify-evenly'>
+            <div className='flex justify-evenly md:flex-row flex-col'>
             {
                 topics.map(topic => <Topic
                     key={topic.id}

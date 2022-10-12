@@ -1,11 +1,21 @@
 import React from 'react';
+import img from './image.png.jpg'
 
 const Welcome = () => {
     return (
-        <div>
-           <div>
-            <img src='../public/images/image.jpg'alt=''></img>
-           </div>
+        <div className='flex justify-center my-5'>
+            <div className='w-3/4'>
+                <div className='flex items-center '>
+                <div className=''>
+                    <img src={img} alt=''></img>
+                </div>
+                <div className=''>
+                    <div className='p-5'>
+                    akfjasjkflk
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
     );
 };
