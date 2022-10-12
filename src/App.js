@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import Main from './Components/Layout/Main';
@@ -14,6 +13,9 @@ function App() {
  children:[
   {
     path:'topics',
+    loader: async () => {
+      return fetch('https://openapi.programming-hero.com/api/quiz');
+    },
     element:<Topics></Topics>
   },
   {

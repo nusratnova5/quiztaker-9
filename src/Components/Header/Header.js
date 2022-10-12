@@ -9,10 +9,10 @@ const Header = () => {
              <p >QuizTaker</p>
            </div>
            <div>
-             <ul>
-                <li><Link to='/topics'>Topics</Link></li>
-                <li><Link to='/statistics'>Statistics</Link></li>
-                <li><Link to='/blogs'>Blogs</Link></li>
+             <ul className='md:flex'>
+                <li className='mr-2'><Link to='/topics'>Topics</Link></li>
+                <li className='mr-2'><Link to='/statistics'>Statistics</Link></li>
+                <li className='mr-2'><Link to='/blogs'>Blogs</Link></li>
              </ul>
            </div>  
           </div>
